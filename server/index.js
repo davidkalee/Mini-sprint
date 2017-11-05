@@ -11,18 +11,15 @@ app.use(parser.json());
 app.use(parser.urlencoded({extended: true}));
 
 // PULL STATIC FILES USING EXPRESS HERE, LOG PATHNAME TO CHECK
-// app.use(express.static(__dirname + '../client/public'));
-// console.log(__dirname + '../client/public');
+app.use(express.static(__dirname + '/../client/public'));
 
 // GET REQUEST HERE
 app.get('/', function(req, res) {
-  console.log('GET RECEIVED BY SERVER');
   res.send('GET RECEIVED BY SERVER');
 })
 
 // POST REQUEST HERE
 app.post('/', function(req, res) {
-  console.log('POST RECEIVED BY SERVER');
   res.send('POST RECEIVED BY SERVER');
 })
 
