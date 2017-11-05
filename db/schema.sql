@@ -1,3 +1,4 @@
+DROP DATABASE hrpairs;
 CREATE DATABASE hrpairs;
 
 USE hrpairs;
@@ -19,3 +20,4 @@ CREATE TABLE inforoster (
   PRIMARY KEY(id)
 );
 
+INSERT INTO inforoster (name, email, image) VALUES ('Joe Smith', 'joesmith@gmail.com', 'joesmith.jpg');
